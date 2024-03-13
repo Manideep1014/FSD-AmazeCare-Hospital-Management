@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+  }
+  
+  /* Form Container */
+  form {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px;
+    border: 2px solid black; /* Set border to solid black */
+    border-radius: 10px; /* Add border radius for rounded corners */
+  }
+  
+  /* Input Fields */
+  .form-control {
+    padding: 10px;
+    border: 1px solid black; /* Set input border to solid black */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-sizing: border-box;
+    background-color: transparent; /* Set input background to transparent */
+    color: black; /* Set input text color to white */
+    width: 100%; /* Ensure input fields take up full width */
+  }
+  
+  /* Icons */
+  .input-group-text {
+    background-color: transparent; /* Set icon background to transparent */
+    border: 1px solid black; /* Set icon border to solid black */
+  }
+  
+  /* Button */
+  .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn-success {
+    background-color: #28a745; /* Set success button background color */
+    border-color: #28a745; /* Set success button border color */
+  }
+  
+  .btn-success:hover {
+    background-color: #218838; /* Set hover background color */
+    border-color: #1e7e34; /* Set hover border color */
+  }
+  
+  
+  .textcolor{
+    background-color: black;
+    color:black;
+  }
+
+  header{
+    background-color: bisque;
+    text-align: center;
+    margin-bottom: 50px;
+  }

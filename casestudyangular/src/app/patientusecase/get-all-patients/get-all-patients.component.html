@@ -1,0 +1,57 @@
+<!-- <p>get-all-patients works!</p>
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>PatientId</th>
+        <th> FullName</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>ContactNumber</th>
+        <th> UserName</th>
+        <th>Password</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of srv.list">
+        <td>{{ p.PatientId }}</td>
+        <td>{{ p.FullName }}</td>
+        <td>{{ p.DOB | date:"dd/MM/yyyy"}}</td>
+        <td>{{ p.Gender }}</td>
+        <td>{{ p.ContactNumber }}</td>
+        <td>{{ p.UserName }}</td>
+        <td>{{ p.Password }}</td>
+        <td><i class="fa fa-edit green-icon text-success" (click)="fillForm(p)"></i></td>
+        <td><i class="fa fa-trash red-icon text-danger" (click)="delPatient(p.PatientId)"></i></td>
+      </tr>
+    </tbody>
+  </table>
+   -->
+
+
+   <input type="number" [(ngModel)]="id" placeholder="Enter ID">
+<button (click)="getAppointmentList(id)">Submit</button>
+
+
+<table class="table table-bordered table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>Patient Name</th>
+      <th> AppointmentId</th>
+      <th>Doctor Name</th>
+      <th>Date</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of srv.apps">
+      <td>{{ p.PatientName }}</td>
+      <td>{{p.AppointmentId}}</td>
+      <td>{{ p.DoctorName }}</td>
+      <td>{{p.Date}}</td>
+      <td>{{p.Status}}</td>
+    </tr>
+  </tbody>
+</table>
